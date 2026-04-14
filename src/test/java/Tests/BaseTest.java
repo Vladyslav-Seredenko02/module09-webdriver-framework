@@ -1,18 +1,16 @@
 package Tests;
 
+import Listeners.AllureListener;
 import Drivers.DriverFactory;
-import Pages.BasePage;
 import Pages.DraftPage;
 import Pages.InboxPage;
 import Pages.LoginPage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.*;
 
+@Listeners(AllureListener.class)
 public class BaseTest {
     private static final Logger log = LogManager.getLogger(BaseTest.class);
 
@@ -20,7 +18,6 @@ public class BaseTest {
     protected LoginPage loginPage;
     protected InboxPage inboxPage;
     protected DraftPage draftPage;
-    protected BasePage basePage;
 
     @Parameters("browser")
     @BeforeClass

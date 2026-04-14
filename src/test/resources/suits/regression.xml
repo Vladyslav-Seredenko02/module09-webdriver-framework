@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite">
+    <parameter name="browser" value="chrome"/>
+
+    <test name="Regression Tests">
+        <classes>
+            <class name="Tests.UkrnetEMailTest">
+                <methods>
+                    <include name="loginTest"/>
+                    <include name="saveDraftTest"/>
+                    <include name="sendMailTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
