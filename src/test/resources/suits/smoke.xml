@@ -4,12 +4,12 @@
     <parameter name="browser" value="chrome"/>
 
     <listeners>
-        <listener class-name="Listeners.AllureListener"/>
+        <listener class-name="listeners.AllureListener"/>
     </listeners>
 
-    <test name="Smoke Tests">
+    <test name="Smoke tests">
         <classes>
-            <class name="Tests.UkrnetEMailTest">
+            <class name="tests.UkrnetEMailTest">
                 <methods>
                     <include name="loginTest"/>
                 </methods>

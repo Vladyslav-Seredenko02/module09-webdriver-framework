@@ -1,9 +1,9 @@
-package Tests;
+package tests;
 
-import Drivers.DriverFactory;
-import Pages.DraftPage;
-import Pages.InboxPage;
-import Pages.LoginPage;
+import drivers.DriverFactory;
+import pages.DraftPage;
+import pages.InboxPage;
+import pages.LoginPage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;

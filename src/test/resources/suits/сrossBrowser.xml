@@ -3,27 +3,27 @@
 <suite name="Cross Browser Suite" parallel="none">
 
     <listeners>
-        <listener class-name="Listeners.AllureListener"/>
+        <listener class-name="listeners.AllureListener"/>
     </listeners>
 
-    <test name="Chrome Tests">
+    <test name="Chrome tests">
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="Tests.UkrnetEMailTest"/>
+            <class name="tests.UkrnetEMailTest"/>
         </classes>
     </test>
 
-    <test name="Firefox Tests">
+    <test name="Firefox tests">
         <parameter name="browser" value="firefox"/>
         <classes>
-            <class name="Tests.UkrnetEMailTest"/>
+            <class name="tests.UkrnetEMailTest"/>
         </classes>
     </test>
 
-    <test name="Edge Tests">
+    <test name="Edge tests">
         <parameter name="browser" value="edge"/>
         <classes>
-            <class name="Tests.UkrnetEMailTest"/>
+            <class name="tests.UkrnetEMailTest"/>
         </classes>
     </test>
 

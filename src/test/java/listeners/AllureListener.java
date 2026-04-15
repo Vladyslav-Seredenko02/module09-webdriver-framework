@@ -1,6 +1,6 @@
-package Listeners;
+package listeners;
 
-import Drivers.DriverFactory;
+import drivers.DriverFactory;
 import io.qameta.allure.Allure;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

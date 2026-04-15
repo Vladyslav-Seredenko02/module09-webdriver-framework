@@ -1,4 +1,4 @@
-package Tests;
+package tests;
 
 import io.qameta.allure.Story;
 import io.qameta.allure.Description;
@@ -21,7 +21,7 @@ public class UkrnetEMailTest extends BaseTest {
         loginPage.enterPassword();
         loginPage.clickLoginBtn();
         inboxPage.waitTillPageLoaded(inboxPage.getInboxPageUrl());
-        Assert.assertEquals(inboxPage.getCurrentUrl()+"123", inboxPage.getInboxPageUrl()
+        Assert.assertEquals(inboxPage.getCurrentUrl(), inboxPage.getInboxPageUrl()
                 , "Login was`t successful - urls were`t matching");
         log.info("=== loginTest passed successfully ===");
     }

@@ -4,12 +4,12 @@
     <parameter name="browser" value="firefox"/>
 
     <listeners>
-        <listener class-name="Listeners.AllureListener"/>
+        <listener class-name="listeners.AllureListener"/>
     </listeners>
 
-    <test name="Regression Tests">
+    <test name="Regression tests">
         <classes>
-            <class name="Tests.UkrnetEMailTest">
+            <class name="tests.UkrnetEMailTest">
                 <methods>
                     <include name="loginTest"/>
                     <include name="saveDraftTest"/>
