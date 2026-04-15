@@ -3,6 +3,10 @@
 <suite name="Smoke Suite">
     <parameter name="browser" value="chrome"/>
 
+    <listeners>
+        <listener class-name="Listeners.AllureListener"/>
+    </listeners>
+
     <test name="Smoke Tests">
         <classes>
             <class name="Tests.UkrnetEMailTest">

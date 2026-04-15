@@ -1,6 +1,5 @@
 package Tests;
 
-import Listeners.AllureListener;
 import Drivers.DriverFactory;
 import Pages.DraftPage;
 import Pages.InboxPage;
@@ -10,7 +9,6 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 
-@Listeners(AllureListener.class)
 public class BaseTest {
     private static final Logger log = LogManager.getLogger(BaseTest.class);
 

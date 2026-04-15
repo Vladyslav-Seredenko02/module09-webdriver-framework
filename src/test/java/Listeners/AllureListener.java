@@ -8,7 +8,6 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-
 import java.io.ByteArrayInputStream;
 
 public class AllureListener implements ITestListener {
@@ -21,7 +20,7 @@ public class AllureListener implements ITestListener {
         byte[] screenshot = ((TakesScreenshot) DriverFactory.getDriver())
                 .getScreenshotAs(OutputType.BYTES);
 
-        Allure.addAttachment("Screemshot", new ByteArrayInputStream(screenshot));
+        Allure.addAttachment("Screenshot", "image/png", new ByteArrayInputStream(screenshot), ".png");
         log.info("Screenshot attached to Allure report");
     }
 }
